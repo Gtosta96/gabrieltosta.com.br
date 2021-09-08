@@ -29,11 +29,18 @@ const Main = (props: IMainProps) => (
             </li>
             <li className="mr-6">
               <Link href="/about/">
-                <a>About</a>
+                <a>Sobre mim</a>
               </Link>
             </li>
             <li className="mr-6">
-              <a href="https://github.com/ixartz/Next-js-Blog-Boilerplate">GitHub</a>
+              <a target="_blank" rel="noreferrer" href="https://github.com/Gtosta96">
+                GitHub
+              </a>
+            </li>
+            <li className="mr-6">
+              <a target="_blank" rel="noreferrer" href="https://www.youtube.com/c/HerowayBrasil">
+                Youtube
+              </a>
             </li>
           </Navbar>
         </div>
@@ -45,23 +52,8 @@ const Main = (props: IMainProps) => (
         © Copyright
         {' '}
         {new Date().getFullYear()}
-        {' '}
+        {' - '}
         {Config.title}
-        . Powered with
-        {' '}
-        <span role="img" aria-label="Love">
-          ♥
-        </span>
-        {' '}
-        by
-        {' '}
-        <a href="https://creativedesignsguru.com">CreativeDesignsGuru</a>
-        {/*
-         * PLEASE READ THIS SECTION
-         * We'll really appreciate if you could have a link to our website
-         * The link doesn't need to appear on every pages, one link on one page is enough.
-         * Thank you for your support it'll mean a lot for us.
-         */}
       </div>
     </div>
   </div>

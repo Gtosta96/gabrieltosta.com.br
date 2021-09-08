@@ -23,8 +23,11 @@ const Meta = (props: IMetaProps) => {
   return (
     <>
       <Head>
+        {/* CONFIG */}
         <meta charSet="UTF-8" key="charset" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        {/* ICONS */}
         <link
           rel="apple-touch-icon"
           href={`${process.env.baseUrl}/apple-touch-icon.png`}
@@ -46,6 +49,8 @@ const Meta = (props: IMetaProps) => {
         />
         <link rel="icon" href={`${process.env.baseUrl}/favicon.ico`} key="favicon" />
         <title>{`${props.title} | ${Config.site_name}`}</title>
+
+        {/* GENERIC OPEN GRAPH */}
         <meta
           name="description"
           content={props.description ? props.description : Config.description}
@@ -61,27 +66,32 @@ const Meta = (props: IMetaProps) => {
         />
         <meta property="og:locale" content={Config.locale} key="og:locale" />
         <meta property="og:site_name" content={Config.site_name} key="og:site_name" />
+
+        {/* POST */}
         {props.post && (
           <>
-            <meta property="og:type" content="article" key="og:type" />
+            <meta property="fb:app_id" content={Config.fbAppId} />
+
+            <meta property="og:type" key="og:type" content="article" />
             <meta
               property="og:image"
-              content={`${Config.url}${process.env.baseUrl}${props.post.image}`}
               key="og:image"
+              content={`${Config.url}${process.env.baseUrl}${props.post.image}`}
             />
-            <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
+            <meta name="twitter:card" key="twitter:card" content="summary_large_image" />
             <meta
               property="article:published_time"
-              content={new Date(props.post.date).toISOString()}
               key="article:published_time"
+              content={new Date(props.post.date).toISOString()}
             />
             <meta
               property="article:modified_time"
-              content={new Date(props.post.modified_date).toISOString()}
               key="article:modified_time"
+              content={new Date(props.post.modified_date).toISOString()}
             />
             <script
               type="application/ld+json"
+              key="ldjson"
               // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{
                 __html: `
@@ -112,7 +122,6 @@ const Meta = (props: IMetaProps) => {
             "@context": "http://schema.org"
           }`,
               }}
-              key="ldjson"
             />
           </>
         )}

@@ -13,6 +13,10 @@ export function getPostSlugs() {
   return fs.readdirSync(postsDirectory);
 }
 
+export function excludeDraftPosts(slug: string) {
+  return !slug.startsWith('DRAFT-');
+}
+
 export function getPostBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.md`);
@@ -39,9 +43,13 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
 
 export function getAllPosts(fields: string[] = []) {
   const slugs = getPostSlugs();
+
   const posts = slugs
+    .filter((slug) => excludeDraftPosts(slug))
     .map((slug) => getPostBySlug(slug, fields))
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
+
+  // console.log({ posts });
   return posts;
 }

@@ -1,5 +1,5 @@
 ---
-title: 'My third post'
+title: 'Pare de utilizar Next.js da forma errada!'
 description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 date: '2020-06-06'
 modified_date: '2020-06-06'

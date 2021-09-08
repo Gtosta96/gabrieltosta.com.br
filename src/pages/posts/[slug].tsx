@@ -1,13 +1,18 @@
 import React from 'react';
 
 import { format } from 'date-fns';
+import ptBR from 'date-fns/locale/pt-BR';
 import { GetStaticPaths, GetStaticProps } from 'next';
+import dynamic from 'next/dynamic';
 
 import { Content } from '../../content/Content';
+// import { FacebookComments } from '../../layout/Facebook';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
 import { getAllPosts, getPostBySlug } from '../../utils/Content';
 import { markdownToHtml } from '../../utils/Markdown';
+
+const FacebookComments = dynamic(() => import('../../layout/Facebook'), { ssr: false });
 
 type IPostUrl = {
   slug: string;
@@ -20,6 +25,7 @@ type IPostProps = {
   modified_date: string;
   image: string;
   content: string;
+  slug: string;
 };
 
 const DisplayPost = (props: IPostProps) => (
@@ -37,7 +43,9 @@ const DisplayPost = (props: IPostProps) => (
     )}
   >
     <h1 className="text-center font-bold text-3xl text-gray-900">{props.title}</h1>
-    <div className="text-center text-sm mb-8">{format(new Date(props.date), 'LLLL d, yyyy')}</div>
+    <div className="text-center text-sm mb-8">
+      {format(new Date(props.date), 'dd LLLL yyyy', { locale: ptBR })}
+    </div>
 
     <Content>
       <div
@@ -45,6 +53,8 @@ const DisplayPost = (props: IPostProps) => (
         dangerouslySetInnerHTML={{ __html: props.content }}
       />
     </Content>
+
+    <FacebookComments path="posts" slug={props.slug} />
   </Main>
 );
 
@@ -62,7 +72,9 @@ export const getStaticPaths: GetStaticPaths<IPostUrl> = async () => {
 };
 
 export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ params }) => {
-  const post = getPostBySlug(params!.slug, [
+  const { slug } = params!;
+
+  const post = getPostBySlug(slug, [
     'title',
     'description',
     'date',
@@ -80,6 +92,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
       date: post.date,
       modified_date: post.modified_date,
       image: post.image,
+      slug,
       content,
     },
   };

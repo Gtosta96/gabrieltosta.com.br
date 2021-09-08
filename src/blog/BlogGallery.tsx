@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { format } from 'date-fns';
+import ptBR from 'date-fns/locale/pt-BR';
 import Link from 'next/link';
 
 import { Pagination, IPaginationProps } from '../pagination/Pagination';
@@ -22,7 +23,9 @@ const BlogGallery = (props: IBlogGalleryProps) => (
             </a>
           </Link>
 
-          <div className="text-right">{format(new Date(elt.date), 'LLL d, yyyy')}</div>
+          <div className="text-right">
+            {format(new Date(elt.date), 'dd LLLL yyyy', { locale: ptBR })}
+          </div>
         </li>
       ))}
     </ul>
