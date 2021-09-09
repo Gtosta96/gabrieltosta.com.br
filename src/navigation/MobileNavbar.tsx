@@ -3,12 +3,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
 
-const paths = [
-  { label: 'Home', href: '/home' },
-  { label: 'Sobre mim', href: '/about' },
-  { label: 'Github', href: 'https://github.com/Gtosta96', external: true },
-  { label: 'Youtube', href: 'https://www.youtube.com/c/HerowayBrasil', external: true },
-];
+import { paths } from './helpers';
 
 const MobileNavbar = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false);

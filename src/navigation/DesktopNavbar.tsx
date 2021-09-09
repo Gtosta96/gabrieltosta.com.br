@@ -2,12 +2,7 @@ import React from 'react';
 
 import Link from 'next/link';
 
-const paths = [
-  { label: 'Home', href: '/home' },
-  { label: 'Sobre mim', href: '/about' },
-  { label: 'Github', href: 'https://github.com/Gtosta96', external: true },
-  { label: 'Youtube', href: 'https://www.youtube.com/c/HerowayBrasil', external: true },
-];
+import { paths } from './helpers';
 
 const DesktopNavbar = () => (
   <ul className="hidden md:flex flex flex-wrap mb-2">
