@@ -4,7 +4,7 @@ export const Config = {
   description:
     'Um blog onde eu escrevo sobre programação, carreira, finanças e o que mais que vier à mente...',
   url: 'https://gabrieltosta.vercel.app',
-  locale: 'pt_BR',
+  locale: 'pt-BR',
   author: 'Gabriel Tosta',
   pagination_size: 10,
 
