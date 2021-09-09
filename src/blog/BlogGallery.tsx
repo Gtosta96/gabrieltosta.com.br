@@ -1,11 +1,10 @@
 import React from 'react';
 
-import { format } from 'date-fns';
-import ptBR from 'date-fns/locale/pt-BR';
 import Link from 'next/link';
 
 import { Pagination, IPaginationProps } from '../pagination/Pagination';
 import { PostItems } from '../utils/Content';
+import { formatDate } from '../utils/Misc';
 
 export type IBlogGalleryProps = {
   posts: PostItems[];
@@ -15,17 +14,15 @@ export type IBlogGalleryProps = {
 const BlogGallery = (props: IBlogGalleryProps) => (
   <>
     <ul>
-      {props.posts.map((elt) => (
-        <li key={elt.slug} className="mb-3 flex justify-between">
-          <Link href="/posts/[slug]" as={`/posts/${elt.slug}`}>
+      {props.posts.map((post) => (
+        <li key={post.slug} className="mb-3 flex justify-between space-x-2">
+          <Link href="/posts/[slug]" as={`/posts/${post.slug}`}>
             <a>
-              <h2>{elt.title}</h2>
+              <h2>{post.title}</h2>
             </a>
           </Link>
 
-          <div className="text-right">
-            {format(new Date(elt.date), 'dd LLLL yyyy', { locale: ptBR })}
-          </div>
+          <div className="text-right whitespace-nowrap">{formatDate(post.date)}</div>
         </li>
       ))}
     </ul>

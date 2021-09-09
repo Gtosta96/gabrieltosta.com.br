@@ -5,6 +5,7 @@ import Document, {
 } from 'next/document';
 
 import { FacebookCommentsScript } from '../layout/Facebook';
+import GoogleAnalyticsPixel from '../layout/GoogleAnalyticsPixel';
 import { Config } from '../utils/Config';
 
 class MyDocument extends Document {
@@ -12,6 +13,8 @@ class MyDocument extends Document {
     return (
       <Html lang={Config.locale}>
         <Head />
+
+        <GoogleAnalyticsPixel />
         <body>
           <FacebookCommentsScript />
 

@@ -1,7 +1,5 @@
 import React from 'react';
 
-import { format } from 'date-fns';
-import ptBR from 'date-fns/locale/pt-BR';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import dynamic from 'next/dynamic';
 
@@ -11,6 +9,7 @@ import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
 import { getAllPosts, getPostBySlug } from '../../utils/Content';
 import { markdownToHtml } from '../../utils/Markdown';
+import { formatDate } from '../../utils/Misc';
 
 const FacebookComments = dynamic(() => import('../../layout/Facebook'), { ssr: false });
 
@@ -43,9 +42,7 @@ const DisplayPost = (props: IPostProps) => (
     )}
   >
     <h1 className="text-center font-bold text-3xl text-gray-900">{props.title}</h1>
-    <div className="text-center text-sm mb-8">
-      {format(new Date(props.date), 'dd LLLL yyyy', { locale: ptBR })}
-    </div>
+    <div className="text-center text-sm mb-8">{formatDate(props.date)}</div>
 
     <Content>
       <div

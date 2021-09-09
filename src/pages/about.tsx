@@ -5,17 +5,26 @@ import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
 
 const About = () => (
-  <Main meta={<Meta title="Lorem ipsum" description="Lorem ipsum" />}>
+  <Main
+    meta={(
+      <Meta
+        title="Sobre mim"
+        description="Olá, meu nome é Gabriel Tosta, sou desenvolvedor autodidata apaixonado por
+  javascript. Trabalho na área de programação desde 2015..."
+      />
+    )}
+  >
     <Content>
       <p>
-        Olá, meu nome é Gabriel Tosta, sou engenheiro de software autodidata apaixonado por
-        javascript e seu mundo, desde 2015 trabalhando principalmente com front-end, mas também com
-        uma boa experiência em back-end e infraestrutura (DevOps).
+        Olá, meu nome é Gabriel Tosta, sou desenvolvedor autodidata apaixonado por javascript.
+        Trabalho desde 2015 principalmente com front-end, mas também com uma baita experiência em
+        back-end e infraestrutura.
       </p>
       <p>
-        Ajudo a organizar comunidades locais de tecnologia e também sou palestrante, onde já tive a
-        oportunidade de compartilhar conhecimento em grandes conferências de tecnologia (Geekle |
-        BrazilJS | TDC) com o objetivo de espalhar para o mundo o poder da programação.
+        Ajudo a organizar comunidades locais de tecnologia na cidade de Sorocaba - SP e também sou
+        palestrante, onde já tive a oportunidade de compartilhar conhecimento em varias conferências
+        de tecnologia - Geekle, BrazilJS, TDC, etc... - com o objetivo de espalhar para o mundo o
+        poder da programação.
       </p>
     </Content>
   </Main>
