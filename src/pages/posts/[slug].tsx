@@ -10,7 +10,7 @@ import { Main } from '../../templates/Main';
 import { Config } from '../../utils/Config';
 import { getAllPosts, getPostBySlug } from '../../utils/Content';
 import { markdownToHtml } from '../../utils/Markdown';
-import { formatDate } from '../../utils/Misc';
+import { getSubtitle } from '../../utils/Misc';
 
 const FacebookComments = dynamic(() => import('../../layout/Facebook'), { ssr: false });
 
@@ -43,7 +43,7 @@ const DisplayPost = (props: IPostProps) => (
     )}
   >
     <h1 className="text-center font-bold text-3xl text-gray-900">{props.title}</h1>
-    <div className="text-center text-sm mb-8">{formatDate(props.date)}</div>
+    <div className="text-center text-sm mb-8">{getSubtitle(props, true)}</div>
 
     <Content>
       <div
@@ -80,6 +80,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
     'image',
     'content',
     'slug',
+    'readTime',
   ]);
   const content = await markdownToHtml(post.content || '');
 
@@ -90,6 +91,7 @@ export const getStaticProps: GetStaticProps<IPostProps, IPostUrl> = async ({ par
       date: post.date,
       modified_date: post.modified_date,
       image: post.image,
+      readTime: post.readTime,
       slug,
       content,
     },

@@ -2,6 +2,7 @@ import fs from 'fs';
 import { join } from 'path';
 
 import matter from 'gray-matter';
+import readingTime from 'reading-time';
 
 const postsDirectory = join(process.cwd(), '_posts');
 
@@ -20,8 +21,11 @@ export function excludeDraftPosts(slug: string) {
 export function getPostBySlug(slug: string, fields: string[] = []) {
   const realSlug = slug.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${realSlug}.md`);
+
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
+  const stats = readingTime(content);
+
   const items: PostItems = {};
 
   // Ensure only the minimal needed data is exposed
@@ -29,8 +33,13 @@ export function getPostBySlug(slug: string, fields: string[] = []) {
     if (field === 'slug') {
       items[field] = realSlug;
     }
+
     if (field === 'content') {
       items[field] = content;
+    }
+
+    if (field === 'readTime') {
+      items.readTime = String(stats.minutes);
     }
 
     if (data[field]) {
@@ -50,6 +59,5 @@ export function getAllPosts(fields: string[] = []) {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1));
 
-  // console.log({ posts });
   return posts;
 }
