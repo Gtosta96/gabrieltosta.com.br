@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-props-no-spreading */
 import React, { useEffect } from 'react';
 
 import { AppProps } from 'next/app';
@@ -5,7 +6,9 @@ import { useRouter } from 'next/router';
 
 import '../styles/main.css';
 import '../styles/prism-a11y-dark.css';
+import SubscribeDialog from '../components/SubscribeDialog';
 import analytics from '../config/analytics';
+import UIContextProvider from '../context/UIContextProvider';
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter();
@@ -21,8 +24,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     };
   }, [router.events]);
 
-  // eslint-disable-next-line react/jsx-props-no-spreading
-  return <Component {...pageProps} />;
+  return (
+    <UIContextProvider>
+      <Component {...pageProps} />
+      <SubscribeDialog />
+    </UIContextProvider>
+  );
 };
 
 export default MyApp;

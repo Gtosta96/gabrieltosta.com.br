@@ -1,0 +1,3 @@
+export const {
+  NODE_ENV, MAILCHIMP_API_KEY, MAILCHIMP_API_SERVER, MAILCHIMP_AUDIENCE_ID,
+} = process.env;

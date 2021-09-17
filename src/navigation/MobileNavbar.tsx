@@ -1,15 +1,24 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 
 import classNames from 'classnames';
 import Link from 'next/link';
 
+import { useUIContext } from '../context/UIContextProvider';
 import { paths } from './helpers';
 
 const MobileNavbar = () => {
+  const uiContext = useUIContext();
   const [showMobileMenu, setShowMobileMenu] = useState(false);
 
   const onClick = () => {
     setShowMobileMenu(!showMobileMenu);
+  };
+
+  const toggleSubscribe = () => {
+    onClick();
+    uiContext.subscribe.toggleSubscribe();
   };
 
   return (
@@ -73,6 +82,15 @@ const MobileNavbar = () => {
               </Link>
             </li>
           ))}
+
+          <li className="mb-6" onClick={toggleSubscribe}>
+            <button
+              type="button"
+              className="block text-center text-gray-700 text-2xl no-underline hover:text-gray-900 hover:no-underline transition duration-300"
+            >
+              Inscreva-se
+            </button>
+          </li>
         </ul>
       </div>
     </div>
