@@ -7,7 +7,6 @@ import { Content } from '../../content/Content';
 // import { FacebookComments } from '../../layout/Facebook';
 import { Meta } from '../../layout/Meta';
 import { Main } from '../../templates/Main';
-import { Config } from '../../utils/Config';
 import { getAllPosts, getPostBySlug } from '../../utils/Content';
 import { markdownToHtml } from '../../utils/Markdown';
 import { getSubtitle } from '../../utils/Misc';
@@ -32,7 +31,7 @@ const DisplayPost = (props: IPostProps) => (
   <Main
     meta={(
       <Meta
-        title={`${props.title} - ${Config.title}`}
+        title={props.title}
         description={props.description}
         post={{
           image: props.image,
