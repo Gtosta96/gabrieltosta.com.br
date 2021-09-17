@@ -1,10 +1,11 @@
+import { parseISO } from 'date-fns';
 import format from 'date-fns/format';
 import ptBR from 'date-fns/locale/pt-BR';
 
 import { PostItems } from './Content';
 
 export function formatDate(post: PostItems) {
-  return format(new Date(post.date), "dd 'de' LLLL 'de' yyyy", { locale: ptBR });
+  return format(parseISO(post.date), "dd 'de' LLLL 'de' yyyy", { locale: ptBR });
 }
 
 export function getSubtitle(post: PostItems, showReadTime?: boolean) {
