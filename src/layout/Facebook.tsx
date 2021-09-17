@@ -33,7 +33,7 @@ const FacebookComments = ({ path, slug }: FacebookCommentsProps) => {
   return (
     <div
       className="fb-comments"
-      data-href={`${Config.url}/${path}/${slug}`}
+      data-href={`${Config.facebookCommentsUrl}/${path}/${slug}`}
       data-width="100%"
       data-numposts="10"
     />
