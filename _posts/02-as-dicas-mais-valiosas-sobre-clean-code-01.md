@@ -1,8 +1,8 @@
 ---
 title: 'As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 01'
 description: 'Desenvolver algoritmos é tarefa primordial de um programador, porém, desenvolver softwares vai muito além de criar algoritmos e resolver problemas.'
-date: '2020-09-16'
-modified_date: '2020-09-16'
+date: '2021-09-16'
+modified_date: '2021-09-16'
 image: '/assets/images/posts/clean-code.jpg'
 ---
 
