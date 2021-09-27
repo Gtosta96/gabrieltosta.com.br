@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 
-import { DesktopNavbar } from '../navigation/DesktopNavbar';
-import { MobileNavbar } from '../navigation/MobileNavbar';
-import { Config } from '../utils/Config';
+import { Config } from '../../utils/Config';
+import { DesktopNavbar } from './Navigation/DesktopNavbar';
+import { MobileNavbar } from './Navigation/MobileNavbar';
 
 type IMainProps = {
   meta: ReactNode;

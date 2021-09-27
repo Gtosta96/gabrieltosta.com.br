@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { Config } from '../utils/Config';
+import { Config } from '../../utils/Config';
 
 export const FacebookCommentsScript = () => (
   <>
