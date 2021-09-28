@@ -27,13 +27,7 @@ const Main = (props: IMainProps) => (
 
       <div className="text-xl py-5">{props.children}</div>
 
-      <div className="border-t border-gray-300 text-center py-8 text-sm">
-        © Copyright
-        {' '}
-        {new Date().getFullYear()}
-        {' - '}
-        {Config.title}
-      </div>
+      <div className="border-t border-gray-300 text-center py-8 text-sm">{Config.copyright}</div>
     </div>
   </div>
 );

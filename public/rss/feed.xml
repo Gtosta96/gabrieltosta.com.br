@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Gabriel Tosta</title>
+        <link>https://gabrieltosta.com.br</link>
+        <description>Um blog onde eu escrevo sobre programação, carreira, finanças e o que mais que vier à mente...</description>
+        <lastBuildDate>Tue, 28 Sep 2021 00:20:23 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>Next.js using Feed for Node.js</generator>
+        <language>pt-BR</language>
+        <image>
+            <title>Gabriel Tosta</title>
+            <url>https://gabrieltosta.com.br/assets/images/logo.png</url>
+            <link>https://gabrieltosta.com.br</link>
+        </image>
+        <copyright>© Copyright 2021 Gabriel Tosta</copyright>
+        <item>
+            <title><![CDATA[As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 02]]></title>
+            <link>https://gabrieltosta.com.br/posts/03-as-dicas-mais-valiosas-sobre-clean-code-02</link>
+            <guid>https://gabrieltosta.com.br/posts/03-as-dicas-mais-valiosas-sobre-clean-code-02</guid>
+            <pubDate>Fri, 24 Sep 2021 00:00:00 GMT</pubDate>
+            <author>gabrieltosta3@gmail.com (Gabriel Tosta)</author>
+        </item>
+        <item>
+            <title><![CDATA[As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 01]]></title>
+            <link>https://gabrieltosta.com.br/posts/02-as-dicas-mais-valiosas-sobre-clean-code-01</link>
+            <guid>https://gabrieltosta.com.br/posts/02-as-dicas-mais-valiosas-sobre-clean-code-01</guid>
+            <pubDate>Thu, 16 Sep 2021 00:00:00 GMT</pubDate>
+            <author>gabrieltosta3@gmail.com (Gabriel Tosta)</author>
+        </item>
+        <item>
+            <title><![CDATA[Cinco dicas para quem quer migrar para a área de programação sem ter nenhuma experiência]]></title>
+            <link>https://gabrieltosta.com.br/posts/01-cinco-dicas-migrar-area-programacao</link>
+            <guid>https://gabrieltosta.com.br/posts/01-cinco-dicas-migrar-area-programacao</guid>
+            <pubDate>Wed, 08 Sep 2021 00:00:00 GMT</pubDate>
+            <author>gabrieltosta3@gmail.com (Gabriel Tosta)</author>
+        </item>
+    </channel>
+</rss>
