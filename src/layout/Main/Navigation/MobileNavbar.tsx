@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import classNames from 'classnames';
 import Link from 'next/link';
 
-import { useUIContext } from '../context/UIContextProvider';
+import { useUIContext } from '../../../context/UIContextProvider';
 import { paths } from './helpers';
 
 const MobileNavbar = () => {

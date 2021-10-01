@@ -1,0 +1,44 @@
+{
+  "version": "https://jsonfeed.org/version/1",
+  "title": "Gabriel Tosta",
+  "home_page_url": "https://gabrieltosta.com.br",
+  "feed_url": "https://gabrieltosta.com.br/rss/feed.json",
+  "description": "Um blog onde eu escrevo sobre programação, carreira, finanças e o que mais que vier à mente...",
+  "icon": "https://gabrieltosta.com.br/assets/images/logo.png",
+  "author": {
+    "name": "Gabriel Tosta",
+    "url": "https://gabrieltosta.com.br"
+  },
+  "items": [
+    {
+      "id": "https://gabrieltosta.com.br/posts/03-as-dicas-mais-valiosas-sobre-clean-code-02",
+      "url": "https://gabrieltosta.com.br/posts/03-as-dicas-mais-valiosas-sobre-clean-code-02",
+      "title": "As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 02",
+      "date_modified": "2021-09-24T00:00:00.000Z",
+      "author": {
+        "name": "Gabriel Tosta",
+        "url": "https://gabrieltosta.com.br"
+      }
+    },
+    {
+      "id": "https://gabrieltosta.com.br/posts/02-as-dicas-mais-valiosas-sobre-clean-code-01",
+      "url": "https://gabrieltosta.com.br/posts/02-as-dicas-mais-valiosas-sobre-clean-code-01",
+      "title": "As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 01",
+      "date_modified": "2021-09-16T00:00:00.000Z",
+      "author": {
+        "name": "Gabriel Tosta",
+        "url": "https://gabrieltosta.com.br"
+      }
+    },
+    {
+      "id": "https://gabrieltosta.com.br/posts/01-cinco-dicas-migrar-area-programacao",
+      "url": "https://gabrieltosta.com.br/posts/01-cinco-dicas-migrar-area-programacao",
+      "title": "Cinco dicas para quem quer migrar para a área de programação sem ter nenhuma experiência",
+      "date_modified": "2021-09-08T00:00:00.000Z",
+      "author": {
+        "name": "Gabriel Tosta",
+        "url": "https://gabrieltosta.com.br"
+      }
+    }
+  ]
+}

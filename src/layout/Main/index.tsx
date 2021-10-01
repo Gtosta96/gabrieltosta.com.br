@@ -1,8 +1,8 @@
 import React, { ReactNode } from 'react';
 
-import { DesktopNavbar } from '../navigation/DesktopNavbar';
-import { MobileNavbar } from '../navigation/MobileNavbar';
-import { Config } from '../utils/Config';
+import { Config } from '../../utils/Config';
+import { DesktopNavbar } from './Navigation/DesktopNavbar';
+import { MobileNavbar } from './Navigation/MobileNavbar';
 
 type IMainProps = {
   meta: ReactNode;
@@ -27,13 +27,7 @@ const Main = (props: IMainProps) => (
 
       <div className="text-xl py-5">{props.children}</div>
 
-      <div className="border-t border-gray-300 text-center py-8 text-sm">
-        © Copyright
-        {' '}
-        {new Date().getFullYear()}
-        {' - '}
-        {Config.title}
-      </div>
+      <div className="border-t border-gray-300 text-center py-8 text-sm">{Config.copyright}</div>
     </div>
   </div>
 );

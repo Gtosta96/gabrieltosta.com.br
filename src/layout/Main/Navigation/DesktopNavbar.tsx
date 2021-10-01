@@ -4,7 +4,7 @@ import React from 'react';
 
 import Link from 'next/link';
 
-import { useUIContext } from '../context/UIContextProvider';
+import { useUIContext } from '../../../context/UIContextProvider';
 import { paths } from './helpers';
 
 const DesktopNavbar = () => {

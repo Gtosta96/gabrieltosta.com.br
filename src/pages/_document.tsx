@@ -4,8 +4,8 @@ import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';
 
-import { FacebookCommentsScript } from '../layout/Facebook';
-import GoogleAnalyticsPixel from '../layout/GoogleAnalyticsPixel';
+import { FacebookCommentsScript } from '../layout/Main/Facebook';
+import GoogleAnalyticsPixel from '../layout/Main/GoogleAnalyticsPixel';
 import { Config } from '../utils/Config';
 
 class MyDocument extends Document {

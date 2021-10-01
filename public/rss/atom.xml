@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://gabrieltosta.com.br</id>
+    <title>Gabriel Tosta</title>
+    <updated>2021-09-28T00:20:23.595Z</updated>
+    <generator>Next.js using Feed for Node.js</generator>
+    <author>
+        <name>Gabriel Tosta</name>
+        <email>gabrieltosta3@gmail.com</email>
+        <uri>https://gabrieltosta.com.br</uri>
+    </author>
+    <link rel="alternate" href="https://gabrieltosta.com.br"/>
+    <link rel="self" href="https://gabrieltosta.com.br/rss/atom.xml"/>
+    <subtitle>Um blog onde eu escrevo sobre programação, carreira, finanças e o que mais que vier à mente...</subtitle>
+    <logo>https://gabrieltosta.com.br/assets/images/logo.png</logo>
+    <icon>https://gabrieltosta.com.br/favicon.ico</icon>
+    <rights>© Copyright 2021 Gabriel Tosta</rights>
+    <entry>
+        <title type="html"><![CDATA[As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 02]]></title>
+        <id>https://gabrieltosta.com.br/posts/03-as-dicas-mais-valiosas-sobre-clean-code-02</id>
+        <link href="https://gabrieltosta.com.br/posts/03-as-dicas-mais-valiosas-sobre-clean-code-02"/>
+        <updated>2021-09-24T00:00:00.000Z</updated>
+        <author>
+            <name>Gabriel Tosta</name>
+            <email>gabrieltosta3@gmail.com</email>
+            <uri>https://gabrieltosta.com.br</uri>
+        </author>
+        <contributor>
+            <name>Gabriel Tosta</name>
+            <email>gabrieltosta3@gmail.com</email>
+            <uri>https://gabrieltosta.com.br</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 01]]></title>
+        <id>https://gabrieltosta.com.br/posts/02-as-dicas-mais-valiosas-sobre-clean-code-01</id>
+        <link href="https://gabrieltosta.com.br/posts/02-as-dicas-mais-valiosas-sobre-clean-code-01"/>
+        <updated>2021-09-16T00:00:00.000Z</updated>
+        <author>
+            <name>Gabriel Tosta</name>
+            <email>gabrieltosta3@gmail.com</email>
+            <uri>https://gabrieltosta.com.br</uri>
+        </author>
+        <contributor>
+            <name>Gabriel Tosta</name>
+            <email>gabrieltosta3@gmail.com</email>
+            <uri>https://gabrieltosta.com.br</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cinco dicas para quem quer migrar para a área de programação sem ter nenhuma experiência]]></title>
+        <id>https://gabrieltosta.com.br/posts/01-cinco-dicas-migrar-area-programacao</id>
+        <link href="https://gabrieltosta.com.br/posts/01-cinco-dicas-migrar-area-programacao"/>
+        <updated>2021-09-08T00:00:00.000Z</updated>
+        <author>
+            <name>Gabriel Tosta</name>
+            <email>gabrieltosta3@gmail.com</email>
+            <uri>https://gabrieltosta.com.br</uri>
+        </author>
+        <contributor>
+            <name>Gabriel Tosta</name>
+            <email>gabrieltosta3@gmail.com</email>
+            <uri>https://gabrieltosta.com.br</uri>
+        </contributor>
+    </entry>
+</feed>

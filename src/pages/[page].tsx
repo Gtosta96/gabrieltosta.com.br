@@ -2,10 +2,10 @@ import React from 'react';
 
 import { GetStaticPaths, GetStaticProps } from 'next';
 
-import { BlogGallery, IBlogGalleryProps } from '../blog/BlogGallery';
-import { Meta } from '../layout/Meta';
-import { IPaginationProps } from '../pagination/Pagination';
-import { Main } from '../templates/Main';
+import { BlogGallery, IBlogGalleryProps } from '../components/Blog/BlogGallery';
+import { IPaginationProps } from '../components/Pagination/Pagination';
+import { Main } from '../layout/Main';
+import { Meta } from '../layout/Main/Meta';
 import { Config } from '../utils/Config';
 import { getAllPosts } from '../utils/Content';
 import { convertTo2D } from '../utils/Pagination';

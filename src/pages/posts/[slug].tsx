@@ -3,15 +3,15 @@ import React from 'react';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import dynamic from 'next/dynamic';
 
-import { Content } from '../../content/Content';
+import { Content } from '../../components/Content/Content';
 // import { FacebookComments } from '../../layout/Facebook';
-import { Meta } from '../../layout/Meta';
-import { Main } from '../../templates/Main';
+import { Main } from '../../layout/Main';
+import { Meta } from '../../layout/Main/Meta';
 import { getAllPosts, getPostBySlug } from '../../utils/Content';
 import { markdownToHtml } from '../../utils/Markdown';
 import { getSubtitle } from '../../utils/Misc';
 
-const FacebookComments = dynamic(() => import('../../layout/Facebook'), { ssr: false });
+const FacebookComments = dynamic(() => import('../../layout/Main/Facebook'), { ssr: false });
 
 type IPostUrl = {
   slug: string;

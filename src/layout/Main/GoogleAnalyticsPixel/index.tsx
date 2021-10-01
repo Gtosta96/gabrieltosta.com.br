@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Config } from '../../utils/Config';
+import { Config } from '../../../utils/Config';
 
 const GoogleAnalyticsPixel = () => {
   if (!Config.gaPixel || Config.nodeEnv !== 'production') {

@@ -1,8 +1,8 @@
 import React from 'react';
 
-import { Content } from '../content/Content';
-import { Meta } from '../layout/Meta';
-import { Main } from '../templates/Main';
+import { Content } from '../components/Content/Content';
+import { Main } from '../layout/Main';
+import { Meta } from '../layout/Main/Meta';
 
 const About = () => (
   <Main

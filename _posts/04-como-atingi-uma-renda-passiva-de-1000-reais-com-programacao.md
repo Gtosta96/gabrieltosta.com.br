@@ -1,9 +1,9 @@
 ---
 title: 'Como eu atingi uma renda passiva de mais de R$ 1.000,00 com programação'
-description: Um dos grandes beneficios da área de tecnologia é a possibilidade criarmos produtos digitais altamente escaláveis e facilmente replicáveis, essa soma de características é perfeita para criarmos produtos geradores de renda passiva
+description: 'Um dos grandes beneficios da área de tecnologia é a possibilidade criarmos produtos digitais altamente escaláveis e facilmente replicáveis, essa soma de características é perfeita para criarmos produtos geradores de renda passiva'
 date: '2021-10-01'
 modified_date: '2021-10-01'
-image: /assets/images/posts/money.jpg
+image: '/assets/images/posts/money.jpg'
 ---
 
 Fala meu povo, só alegria? Hoje resolvi trazer um tópico que brilha os olhos de muitas pessoas, inclusive o meu. **Renda passiva** através da programação.

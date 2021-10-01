@@ -1,6 +1,6 @@
 ---
 title: 'As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 02'
-description: Existem diversas formas de construir um programa e de longe a mais problemática é aquela que manipula e faz mutações em diferentes níveis. Nesse post vamos aprender a evitar essa abordagem de uma forma simples!
+description: 'Existem diversas formas de construir um programa e de longe a mais problemática é aquela que manipula e faz mutações em diferentes níveis. Nesse post vamos aprender a evitar essa abordagem de uma forma simples!'
 date: '2021-09-24'
 modified_date: '2021-09-24'
 image: '/assets/images/posts/clean-code.jpg'
