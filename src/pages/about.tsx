@@ -3,13 +3,12 @@ import React from 'react';
 import { Content } from '../content/Content';
 import { Meta } from '../layout/Meta';
 import { Main } from '../templates/Main';
-import { Config } from '../utils/Config';
 
 const About = () => (
   <Main
     meta={(
       <Meta
-        title={`Sobre mim | ${Config.title}`}
+        title="Sobre mim"
         description="Olá, meu nome é Gabriel Tosta, sou desenvolvedor autodidata apaixonado por
   javascript. Trabalho na área de programação desde 2015..."
       />
