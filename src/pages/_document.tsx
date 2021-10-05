@@ -4,14 +4,14 @@ import Document, {
   Html, Head, Main, NextScript,
 } from 'next/document';
 
+import Constants from '../config/constants';
 import { FacebookCommentsScript } from '../layout/Main/Facebook';
 import GoogleAnalyticsPixel from '../layout/Main/GoogleAnalyticsPixel';
-import { Config } from '../utils/Config';
 
 class MyDocument extends Document {
   render() {
     return (
-      <Html lang={Config.locale}>
+      <Html lang={Constants.locale}>
         <Head />
 
         <GoogleAnalyticsPixel />

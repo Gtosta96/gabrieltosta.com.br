@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-import { Config } from '../../utils/Config';
+import Constants from '../../config/constants';
 import { DesktopNavbar } from './Navigation/DesktopNavbar';
 import { MobileNavbar } from './Navigation/MobileNavbar';
 
@@ -17,8 +17,8 @@ const Main = (props: IMainProps) => (
       <div className="border-b border-gray-300">
         <div className="pt-16 pb-8">
           <MobileNavbar />
-          <div className="font-semibold text-3xl text-gray-900">{Config.title}</div>
-          <div className="text-xl">{Config.description}</div>
+          <div className="font-semibold text-3xl text-gray-900">{Constants.title}</div>
+          <div className="text-xl">{Constants.description}</div>
         </div>
         <div>
           <DesktopNavbar />
@@ -27,7 +27,7 @@ const Main = (props: IMainProps) => (
 
       <div className="text-xl py-5">{props.children}</div>
 
-      <div className="border-t border-gray-300 text-center py-8 text-sm">{Config.copyright}</div>
+      <div className="border-t border-gray-300 text-center py-8 text-sm">{Constants.copyright}</div>
     </div>
   </div>
 );

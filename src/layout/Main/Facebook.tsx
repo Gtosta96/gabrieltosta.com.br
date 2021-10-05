@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 
-import { Config } from '../../utils/Config';
+import Constants from '../../config/constants';
 
 export const FacebookCommentsScript = () => (
   <>
@@ -9,7 +9,7 @@ export const FacebookCommentsScript = () => (
       async
       defer
       crossOrigin="anonymous"
-      src={`https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v11.0&appId=${Config.fbAppId}&autoLogAppEvents=1`}
+      src={`https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v11.0&appId=${Constants.fbAppId}&autoLogAppEvents=1`}
       nonce="1eJYGXOm"
     />
   </>
@@ -33,7 +33,7 @@ const FacebookComments = ({ path, slug }: FacebookCommentsProps) => {
   return (
     <div
       className="fb-comments"
-      data-href={`${Config.facebookCommentsUrl}/${path}/${slug}`}
+      data-href={`${Constants.facebookCommentsUrl}/${path}/${slug}`}
       data-width="100%"
       data-numposts="10"
     />

@@ -1,16 +1,16 @@
 import React from 'react';
 
-import { Config } from '../../../utils/Config';
+import Constants from '../../../config/constants';
 
 const GoogleAnalyticsPixel = () => {
-  if (!Config.gaPixel || Config.nodeEnv !== 'production') {
+  if (!Constants.gaPixel || Constants.nodeEnv !== 'production') {
     return null;
   }
 
   return (
     <>
       {/* <!-- Global site tag (gtag.js) - Google Analytics --> */}
-      <script async src={`https://www.googletagmanager.com/gtag/js?id=${Config.gaPixel}`} />
+      <script async src={`https://www.googletagmanager.com/gtag/js?id=${Constants.gaPixel}`} />
       <script
         // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{
@@ -18,7 +18,7 @@ const GoogleAnalyticsPixel = () => {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${Config.gaPixel}',{page_path: window.location.pathname});`,
+            gtag('config', '${Constants.gaPixel}',{page_path: window.location.pathname});`,
         }}
       />
     </>

@@ -2,11 +2,11 @@ import fs from 'fs';
 
 import { Feed } from 'feed';
 
-import { Config } from './Config';
+import Constants from '../config/constants';
 import { PostItems } from './Content';
 
 async function generateRssFeed(posts: PostItems[]) {
-  if (process.env.NODE_ENV === 'development') {
+  if (Constants.nodeEnv === 'development') {
     return;
   }
 
@@ -15,32 +15,32 @@ async function generateRssFeed(posts: PostItems[]) {
 
   const date = new Date();
   const author = {
-    name: Config.title,
+    name: Constants.title,
     email: 'gabrieltosta3@gmail.com',
-    link: Config.url,
+    link: Constants.url,
   };
 
   const feed = new Feed({
-    title: Config.title,
-    description: Config.description,
-    id: Config.url,
-    link: Config.url,
-    language: Config.locale,
-    image: `${Config.url}/assets/images/logo.png`,
-    favicon: `${Config.url}/favicon.ico`,
-    copyright: Config.copyright,
+    title: Constants.title,
+    description: Constants.description,
+    id: Constants.url,
+    link: Constants.url,
+    language: Constants.locale,
+    image: `${Constants.url}/assets/images/logo.png`,
+    favicon: `${Constants.url}/favicon.ico`,
+    copyright: Constants.copyright,
     updated: date,
     generator: 'Next.js using Feed for Node.js',
     feedLinks: {
-      rss2: `${Config.url}/rss/feed.xml`,
-      json: `${Config.url}/rss/feed.json`,
-      atom: `${Config.url}/rss/atom.xml`,
+      rss2: `${Constants.url}/rss/feed.xml`,
+      json: `${Constants.url}/rss/feed.json`,
+      atom: `${Constants.url}/rss/atom.xml`,
     },
     author,
   });
 
   posts.forEach((post) => {
-    const url = `${Config.url}/posts/${post.slug}`;
+    const url = `${Constants.url}/posts/${post.slug}`;
 
     feed.addItem({
       title: post.title,

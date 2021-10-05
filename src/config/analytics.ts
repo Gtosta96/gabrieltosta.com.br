@@ -1,11 +1,11 @@
-import { Config } from '../utils/Config';
+import Constants from './constants';
 
 const pageview = (url: string): void => {
-  if (Config.nodeEnv === 'production' && !window.gtag) {
+  if (Constants.nodeEnv === 'production' && !window.gtag) {
     throw Error('Gtag não carregou (async fail)...');
   }
 
-  window.gtag?.('config', Config.gaPixel, {
+  window.gtag?.('config', Constants.gaPixel, {
     page_path: url,
   });
 };

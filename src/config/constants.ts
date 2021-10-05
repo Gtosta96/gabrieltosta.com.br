@@ -1,4 +1,4 @@
-export const Config = {
+const Constants = {
   site_name: 'Gabriel Tosta',
   author: 'Gabriel Tosta',
   title: 'Gabriel Tosta',
@@ -16,3 +16,5 @@ export const Config = {
   gaPixel: 'UA-207162750-1',
   nodeEnv: process.env.NODE_ENV,
 };
+
+export default Constants;
