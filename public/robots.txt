@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gabrieltosta.com.br
+
+# Sitemaps
+Sitemap: https://gabrieltosta.com.br/sitemap.xml

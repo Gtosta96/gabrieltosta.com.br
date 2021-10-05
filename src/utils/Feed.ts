@@ -10,6 +10,9 @@ async function generateRssFeed(posts: PostItems[]) {
     return;
   }
 
+  // eslint-disable-next-line no-console
+  console.log('generating RSS Feed');
+
   const date = new Date();
   const author = {
     name: Config.title,

@@ -19,12 +19,9 @@ const Index = (props: IBlogGalleryProps) => (
 export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
   const posts = getAllPosts(['title', 'date', 'slug']);
 
-  // eslint-disable-next-line no-console
-  console.log('generating RSS Feed');
   await generateRssFeed(posts);
 
   const pagination: IPaginationProps = {};
-
   if (posts.length > Config.pagination_size) {
     pagination.next = '/page2';
   }
