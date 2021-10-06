@@ -14,6 +14,10 @@ class MyDocument extends Document {
       <Html lang={Constants.locale}>
         <Head />
 
+        <meta
+          name="google-site-verification"
+          content="gIEt9k0XAeDiry2kGSmPPdVMR9B7HWsSuD4oMB65Rro"
+        />
         <GoogleAnalyticsPixel />
         <body>
           <FacebookCommentsScript />
