@@ -1,0 +1,41 @@
+backend:
+  name: github
+  branch: main
+  repo: gtosta96/gabrieltosta.com.br
+  base_url: https://gabrieltosta.com.br/
+  auth_endpoint: api/auth/ # Essa rota vai ser muito importante mais para frente
+
+media_folder: public/assets/images/posts
+public_folder: /assets/images/posts
+
+publish_mode: editorial_workflow # Isso permite ter aquele workflow com drafts e tudo
+
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+
+collections:
+  - name: posts 
+    label: posts 
+    folder: _posts # A pasta onde ficarão os posts
+    create: true # Permite criar um post novo
+    slug: '{{slug}}' # Estrutura do nome arquivo, exemplo: title.md
+    fields: # Os campos do seu frontmatter
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'string' }
+      - {
+          label: 'Date',
+          name: 'date',
+          widget: 'datetime',
+          format: 'YYYY-MM-DD hh:mm:ss'
+        }
+      - {
+        label: 'Modified Date',
+        name: 'modified_date',
+        widget: 'datetime',
+        format: 'YYYY-MM-DD hh:mm:ss'
+      }
+      - { label: 'Post Image', name: 'image', widget: 'image', required: false }
+      # - { label: 'Layout', name: 'layout', widget: 'hidden', default: 'post' }
+
+      - { label: 'Body', name: 'body', widget: 'markdown' }
