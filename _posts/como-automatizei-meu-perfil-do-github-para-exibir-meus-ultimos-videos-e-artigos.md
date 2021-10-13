@@ -16,7 +16,7 @@ Atualizando a[ apresentação do meu perfil no GitHub](https://github.com/gtosta
 
 Após muita pesquisa, dor de cabeça e *copy/paste* cheguei em um resultado satisfatório e gostaria de compartilhar aqui para quem tenha o mesmo desejo e talvez enfrente a mesma dificuldade. Vamos lá?
 
-Primeiramente você deve [criar o seu perfil de apresentação no GitHub](https://docs.github.com/pt/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme), que basicamente se resume em criar, commitar e dar push em um repositório com o mesmo nome do seu usuário do GitHub contendo um arquivo README.md
+Primeiramente você deve [criar o seu perfil de apresentação no GitHub](https://docs.github.com/pt/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme), que basicamente se resume em criar, commitar e dar push em um repositório com o mesmo nome do seu usuário do GitHub contendo um arquivo README.md. Na imagem abaixo voce pode visualizar o meu, com os dados ja
 
 ![](/assets/images/posts/screen-shot-2021-10-11-at-21.18.29.png)
 
@@ -32,4 +32,6 @@ Uma vez criado o repositório vamos adicionar as seguintes linhas de código no 
 <!-- YOUTUBE:END -->
 ```
 
-Esses *Markups* serão necessários lá na frente, dentro deles que os links serão gerados automaticamente
+Esses *Markups* serão utilizados para conter os links gerados automaticamente através de uma ferramenta que vamos ver um pouco mais a frente.
+
+Agora é a h
