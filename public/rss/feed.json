@@ -11,6 +11,16 @@
   },
   "items": [
     {
+      "id": "https://gabrieltosta.com.br/posts/04-como-atingi-uma-renda-passiva-de-1000-reais-com-programacao",
+      "url": "https://gabrieltosta.com.br/posts/04-como-atingi-uma-renda-passiva-de-1000-reais-com-programacao",
+      "title": "Como eu atingi uma renda passiva de mais de R$ 1.000,00 com programação",
+      "date_modified": "2021-10-01T00:00:00.000Z",
+      "author": {
+        "name": "Gabriel Tosta",
+        "url": "https://gabrieltosta.com.br"
+      }
+    },
+    {
       "id": "https://gabrieltosta.com.br/posts/03-as-dicas-mais-valiosas-sobre-clean-code-02",
       "url": "https://gabrieltosta.com.br/posts/03-as-dicas-mais-valiosas-sobre-clean-code-02",
       "title": "As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 02",
