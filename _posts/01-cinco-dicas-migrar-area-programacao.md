@@ -3,7 +3,7 @@ title: 'Cinco dicas para quem quer migrar para a área de programação sem ter 
 description: 'Se você também está nesse processo, aqui vão algumas dicas que vão com certeza te ajudar a trilhar esse caminho.'
 date: '2021-09-08'
 modified_date: '2021-09-08'
-image: '/assets/images/posts/level-up.jpg'
+image: '/assets/images/posts/level-up1.jpg'
 ---
 
 

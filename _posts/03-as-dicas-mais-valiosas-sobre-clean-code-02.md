@@ -3,7 +3,7 @@ title: 'As dicas mais valiosas sobre clean code que alguém vai te dar! - Parte 
 description: 'Existem diversas formas de construir um programa e de longe a mais problemática é aquela que manipula e faz mutações em diferentes níveis. Nesse post vamos aprender a evitar essa abordagem de uma forma simples!'
 date: '2021-09-24'
 modified_date: '2021-09-24'
-image: '/assets/images/posts/clean-code.jpg'
+image: '/assets/images/posts/clean-code2.jpg'
 ---
 
 Opa, e ai, tudo certinho? [No post passado](@@baseUrl@@/posts/02-as-dicas-mais-valiosas-sobre-clean-code-01) vimos algumas dicas bem interessantes relacionadas a clean code e hoje, para finalizar esse assunto - ao menos por enquanto - separei uma dica sobre, na minha opinião, um dos piores - senão o pior - erro na hora de construir um algoritmo, vamos lá?

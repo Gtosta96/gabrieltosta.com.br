@@ -5,6 +5,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const baseUrl = '';
 
 module.exports = withBundleAnalyzer({
+  images: {
+    domains: ['media-exp1.licdn.com'],
+  },
   poweredByHeader: false,
   trailingSlash: true,
   basePath: baseUrl,

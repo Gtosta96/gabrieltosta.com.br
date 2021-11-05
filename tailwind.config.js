@@ -39,6 +39,10 @@ module.exports = {
           900: '#2a4365',
         },
       },
+      fontFamily: {
+        title: ['Comfortaa'],
+        sans: ['Nunito'],
+      },
     },
   },
   variants: {},

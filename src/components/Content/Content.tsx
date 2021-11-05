@@ -5,7 +5,7 @@ type IContentProps = {
 };
 
 const Content = (props: IContentProps) => (
-  <div className="content">
+  <div className="content bg-gray-100 p-8">
     {props.children}
 
     <style jsx>

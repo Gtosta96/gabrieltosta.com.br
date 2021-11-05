@@ -44,7 +44,7 @@ const MobileNavbar = () => {
       {/* <!-- mobile menu --> */}
       <div
         className={classNames(
-          'md:hidden fixed w-screen h-screen inset-0 bg-white flex flex-col items-center justify-center',
+          'md:hidden fixed w-screen h-screen inset-0 bg-white flex flex-col items-center justify-center z-50',
           {
             hidden: !showMobileMenu,
           },

@@ -12,12 +12,12 @@ import generateRssFeed from '../utils/Feed';
 
 const Index = (props: IBlogGalleryProps) => (
   <Main meta={<Meta title="Home" description={Constants.description} />}>
-    <BlogGallery posts={props.posts} pagination={props.pagination} />
+    <BlogGallery posts={props.posts} pagination={props.pagination} image={props.image} />
   </Main>
 );
 
 export const getStaticProps: GetStaticProps<IBlogGalleryProps> = async () => {
-  const posts = getAllPosts(['title', 'date', 'slug']);
+  const posts = getAllPosts(['title', 'date', 'slug', 'image']);
 
   await generateRssFeed(posts);
 
